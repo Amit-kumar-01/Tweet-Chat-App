@@ -1,0 +1,172 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #FBF8DD;
+    margin: 0;
+    padding: 0;
+}
+
+#app {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 20px;
+    text-align: center; 
+}
+
+.all-class {
+    flex-grow: 7; 
+    max-width: 70vw; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav {
+    flex-grow: 2; 
+    max-width: 20vw; 
+    background-color: #e5c299;
+    border-radius: 1rem;
+
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    padding: 0.5rem 0.75rem;
+    overflow-y: auto;
+}
+
+.nav-option {
+    line-height: 2rem;
+    opacity: 0.7;
+    padding: 0.5rem 0.75rem;
+}
+
+.nav-option:hover {
+    opacity: .3;
+}
+
+.nav-option i {
+    font-size: 1.5rem;
+}
+
+.nav-option a {
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+.chat {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease-in-out;
+    max-width: 500px;
+    margin-left: auto; 
+    margin-right: auto; 
+    font-size: 1rem;
+    
+}
+
+.chat:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.chat:nth-child(even) {
+    background-color: #F9EFDB;
+}
+
+.chat:nth-child(odd) {
+    background-color: #FFF8E3;
+}
+
+
+.all-class {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.all-class h3 {
+    color: #333;
+}
+
+.all-class hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+
+.chat b {
+    color: #333;
+}
+
+.chat .msg {
+    margin-top: 5px;
+}
+
+.chat p {
+    font-size: 15px;
+    color: #666;
+}
+
+/* Styling for the 'Edit' and 'Delete' buttons */
+.chat button {
+    background-color: #fff;
+    color: #007bff;
+    border: 1px solid  #007bff;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-right: 5px;
+    display: inline-block;
+}
+.edit-form,
+.delete-form {
+    display: inline-block;
+    margin-right: 1px; /* Adjust the margin as needed */
+}
+
+
+.chat button:hover {
+    background-color: #4986c8;
+    color: #fff;
+}
+
+
+/* Media query for responsiveness */
+@media only screen and (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .all-class, .nav {
+        max-width: 90vw;
+    }
+
+    .nav {
+        position: static;
+        height: auto;
+        margin-top: 20px;
+        padding: 0;
+        border-radius: 0;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .nav {
+        display: none;
+    }
+}
